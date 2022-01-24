@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({Key? key}) : super(key: key);
@@ -143,6 +145,13 @@ class SignUpPage extends StatelessWidget {
           ),
           child: Text("Sign up", style: TextStyle(fontSize: 36,fontWeight: FontWeight.bold,color: Colors.white),),
         ),
+        SizedBox(height: 10,),
+        RichText(text: TextSpan(text: "Have an account?",
+        recognizer: TapGestureRecognizer()..onTap=()=>Get.back(),
+        style: TextStyle(
+          fontSize: 20,
+          color: Colors.grey[500]
+        ))),
         SizedBox(height: h*0.1,),
         RichText(text: TextSpan(
             children: <TextSpan>[

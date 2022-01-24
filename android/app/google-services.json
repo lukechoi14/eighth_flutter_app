@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1002877540900",
+    "project_id": "fir-getx-963a4",
+    "storage_bucket": "fir-getx-963a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002877540900:android:ee4dc4de6cb6f1922fd6b1",
+        "android_client_info": {
+          "package_name": "com.getx.app.luke.eighthFlutterApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1002877540900-ppbjaivmvc26r28u1nd9e69rdb83itva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3tEeRIxj4MaJNRHJROnN7ayZzrxfw7aQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1002877540900-ppbjaivmvc26r28u1nd9e69rdb83itva.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1002877540900-3b7oag39gcqp37o7octb1lnknbk4lui9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.getx.app.luke.eighthFlutterApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
