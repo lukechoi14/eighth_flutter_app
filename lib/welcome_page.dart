@@ -1,8 +1,10 @@
+import 'package:eighth_flutter_app/auth_controller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class WelcomePage extends StatelessWidget {
-  const WelcomePage({Key? key}) : super(key: key);
+  String email;
+  WelcomePage({Key? key,required this.email}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +51,7 @@ class WelcomePage extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   color: Colors.black54
                 ),),
-              Text("aa@op.gg",
+              Text(email,
                 style:TextStyle(
                     fontSize: 18,
                     color: Colors.grey[500]
@@ -58,20 +60,25 @@ class WelcomePage extends StatelessWidget {
           ),
         ),
         SizedBox(height: 200,),
-        Container(
-          alignment: Alignment.center,
-          width: w*0.6,
-          height: h*0.08,
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(30),
-              image: DecorationImage(
-                  image: AssetImage(
-                      "img/loginbtn.png"
-                  ),
-                  fit: BoxFit.cover
-              )
+        GestureDetector(
+          onTap: (){
+            AuthController.instance.logout();
+          },
+          child: Container(
+            alignment: Alignment.center,
+            width: w*0.6,
+            height: h*0.08,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+                image: DecorationImage(
+                    image: AssetImage(
+                        "img/loginbtn.png"
+                    ),
+                    fit: BoxFit.cover
+                )
+            ),
+            child: Text("Sign out", style: TextStyle(fontSize: 36,fontWeight: FontWeight.bold,color: Colors.white),),
           ),
-          child: Text("Sign out", style: TextStyle(fontSize: 36,fontWeight: FontWeight.bold,color: Colors.white),),
         ),
       ],
       ),
